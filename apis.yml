@@ -1,7 +1,24 @@
 aid: suiteness
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/suiteness.png
 name: Suiteness
-description: Suiteness is a company surfaced as a portfolio company of bullpen-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Suiteness is a hotel booking platform specializing in connecting rooms
+  and suites that hotels do not make public. Through partnerships with hotels, it
+  surfaces adjoining rooms and suites - marked with a "+" symbol - so families and
+  groups can book twice the space at roughly half the price of booking multiple standard
+  rooms. It combines suite inventory, a concierge collaboration service, and a membership
+  program. Suiteness is a consumer travel booking company backed by Bullpen Capital;
+  it exposes no public developer API, SDK, or partner API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/suiteness/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Hospitality
+- Hotels
+- Booking
+- Suites
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/suiteness-domain-security.yml
+- type: PrivacyPolicy
+  url: https://www.suiteness.com/privacy
 - type: Website
   url: https://www.suiteness.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
